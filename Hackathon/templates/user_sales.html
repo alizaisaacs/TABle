@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<meta http-equiv="refresh" content="5">
+
+<div class="container">
+
+	<div class="row entry">
+		<div class="col-sm-3" font-weight="bold">
+			Waiter
+		</div>
+		<div class='col-sm-5' font-weight="bold">
+			Item
+		</div>
+		<div class='col-sm-2' font-weight="bold">
+			Price
+		</div>
+	</div>
+
+			
+
+			<div id="sales_container">
+
+			</div>
+
+			 <button id="pay"  class="btn btn-primary btn-block teal">
+   				Pay Now
+	</button>
+
+</div>
+
+<script src= "../static/user_sales.js">
+</script>
+
+<script>
+        var clients = {{clients|tojson}} 
+        var sales = {{sales|tojson}}
+</script>
+
+{% endblock %}

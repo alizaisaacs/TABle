@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+
+<div class= "larger">
+	Pair Table {{table_number}}
+</div>
+
+	<div class="input-group">
+      <input type="text" id="email" class="form-control"
+         placeholder="Guest Email" />
+   </div>
+   
+   <br />
+   <button type="button" id="request_pair" class="btn btn-primary btn-lg btn-block teal">
+      Request Pair
+   </button>
+
+
+</div>
+
+
+<script src= "../static/request_pair.js">
+</script>
+
+{% endblock %}

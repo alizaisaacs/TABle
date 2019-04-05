@@ -1,0 +1,161 @@
+<html>
+	
+	<head>
+		
+
+
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+	<style>
+
+	.larger {
+		font-size: 20px;
+		padding: 20px;
+		color:  #79CDCD;
+	}
+
+	/*.col-sm-5 {
+		margin: 20px;
+	}
+	.col-sm-2 {
+		margin: 20px;
+	}
+	.col-sm-3 {
+		margin: 20px;
+	}*/
+
+	.nav {
+		background: #79CDCD;
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		padding: 25px;
+		margin-bottom: 15px;
+	}
+
+	.teal {
+		background: #79CDCD;
+		border-color: #79CDCD;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.small-table {
+		background: darkgrey;
+		width: 80px;
+		height: 80px;
+		text-align: center;
+		color: white;
+		margin-right: 15px;
+		border-radius: 50%;
+		line-height: 80px;
+		float: left;
+	}
+
+	.yellow {
+			background-color: lightyellow;
+			cursor: pointer;
+			
+		}
+
+	.large-table {
+		background: darkgrey;
+		width: 110px;
+		height: 110px;
+		line-height: 110px;
+		text-align: center;
+		color: white;
+		margin-right: 15px;
+		margin-left: 125px;
+		border-radius: 50%;
+	}
+
+			.grey_background {
+			background-color: gainsboro;
+			font-size: 25px;
+			font-weight: bold;
+			padding: 50px 30px 50px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+
+		#submit_btn {
+			background-color: darkturquoise;
+			color: white;
+			padding: 5px;
+			border-radius: 10px;
+			display: inline-block;
+		}
+
+		.long {
+			width: 400px;
+		}
+
+		.entry {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.delete_btn {
+			background-color: yellow;
+			font-size: 18px;
+			border-radius: 10px;
+			margin-left: 20px;
+
+		}
+
+		.table {
+			/*background-image: url("background.jpg");*/
+		}
+
+		input {
+			width: 100%;
+		}
+
+	</style>
+
+	</head>
+
+	<body>
+
+		{% block navbar %}
+		<div class="container">
+
+
+		<nav class="navbar navbar-default nav table" role = "navigation">
+			<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<a class="navbar-brand">
+					TABle
+				</a>
+			</div>
+
+			
+		</div>
+
+		</nav>
+
+		</div>
+
+		{% endblock %}
+
+		<div class="container">
+			{% block content %}
+
+
+			{% endblock %}
+		</div>
+		
+	</body>
+
+</html>

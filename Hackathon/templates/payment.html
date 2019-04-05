@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+
+<div class= "larger">
+	Pick a payment method
+</div>
+	
+	No previous credit cards used
+	
+   <br />
+   <br />
+   <button type="button" id="request_pair" class="btn btn-primary btn-lg btn-block teal">
+      Add a credit card
+   </button>
+
+   <br />
+   <button type="button" id="request_pair" class="btn btn-primary btn-lg btn-block teal">
+      Use Apple Pay
+   </button>
+
+    <br />
+   <button type="button" id="request_pair" class="btn btn-primary btn-lg btn-block teal">
+      Split with friends
+   </button>
+
+
+</div>
+
+
+<script src= "../static/request_pair.js">
+</script>
+
+{% endblock %}

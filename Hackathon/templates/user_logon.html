@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+
+   <div class="larger">
+
+     User log-in for Brat Factory
+   </div>
+	
+   <div class="input-group">
+      <input type="text" id="email" class="form-control"
+         placeholder="Email" />
+   </div>
+
+   <br />
+   <div class="input-group">
+      <input type="password" id="password" class="form-control"
+         placeholder="Password" />
+   </div>
+
+   <br />
+   <button id="login_button" class="btn btn-primary btn-lg btn-block teal">
+      Login
+   </button>
+
+   <br />
+   <button id="account_button"  class="btn btn-primary btn-block teal">
+   		Don't have an account yet? Sign up!
+	</button>
+
+</div>
+
+
+<script src= "../static/user_logon.js">
+</script>
+{% endblock %}s
